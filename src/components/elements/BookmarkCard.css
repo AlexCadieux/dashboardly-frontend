@@ -1,11 +1,36 @@
-.board-card {
+.bookmark-card {
+  display:flex;
+  flex-direction: column;
   background: white;
   padding: 0.5rem;
-  margin: 0.5rem;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
+  margin: 1.5rem auto;
+  border: 1px solid lightgray;
   width: 360px;
   /*max-width: 480px;*/
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
   cursor: pointer;
+  display: flex;
+  padding-right:0;
+}
+
+.bookmark-card_link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bookmark-card_image {
+  margin-top:0.75rem;
+  width:150px;
+  height:150px;
+  background-color: #bdbdbd;
+}
+
+.bookmark-card_text {
+  width: 50%;
+}
+
+.edit-button {
+  display: flex;
+  justify-content: flex-end;
+
 }

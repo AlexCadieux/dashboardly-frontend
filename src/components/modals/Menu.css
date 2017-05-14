@@ -1,10 +1,10 @@
 .menu {
   width: 270px;
   position: fixed;
-  top: 0;
+  top: 55px;
   left: 0;
   z-index: 10;
-  background: lightgrey;
+  background-color: #FAFAFA;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -12,6 +12,7 @@
   transform: translateX(-270px);
   opacity: 0;
   visibility: hidden;
+  box-shadow: 3px 6px 8px 0 rgba(0, 0, 0, 0.2), 10px 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .menu.show {
@@ -21,7 +22,9 @@
 }
 
 .menu__header {
+  background-color:#616161;
   height: 160px;
+  box-shadow: inset 0 4px 4px #464646;
 }
 
 .menu__avatar {
@@ -34,5 +37,40 @@
 
 .menu__list {
   display: flex;
+  height: 175px;
   flex-flow: column;
+  justify-content:center;
+}
+
+.menu__item {
+  padding-left: 2.5em;
+  font-weight: bold;
+  }
+
+.menu__item p{
+  vertical-align: middle;
+}
+
+.menu__item button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  vertical-align:middle;
+  font-weight: bold;
+}
+
+.menu__item:first-child {
+  margin-top: 1.5em;
+}
+
+.menu__item:last-child {
+  margin-bottom: 1.5em;
+}
+
+.menu__item:hover {
+  background-color:rgba(209,209,209, 0.90);
+}
+
+.menu__item:focus {
+  background-color: #616161;
 }

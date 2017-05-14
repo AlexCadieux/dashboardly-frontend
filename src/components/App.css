@@ -15,24 +15,31 @@ a {
   flex-flow: column;
   align-items: center;
   background: papayawhip;
-  height: 100vh
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 .App-navbar {
-  color: DarkSeaGreen;
-  padding: 1.5rem;
+  position:fixed;
+  background-color: #1A8571;
+  color: whitesmoke;
+  padding: 1rem;
+  font-weight: lighter;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 0px 10px 8px rgba(191,189,191,0.71);
+  z-index:5;
 }
 
 .App-navbar__title {
   margin: 0;
-  color: DarkSeaGreen;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
+  font-family: roboto;
 }
 
 .settings-icon, .menu-icon, .App-navbar__title {
@@ -42,4 +49,78 @@ a {
 
 .settings-icon:hover, .menu-icon:hover, .App-navbar__title:hover {
   color: DarkOliveGreen;
+}
+
+.formBackground {
+  width: 100%;
+  height:100vh;
+  background-color: rgba(0,0,0, 0.7);
+  padding-top: 12%;
+}
+
+.authForm {
+  background: white;
+  margin: auto;
+  border: 1px solid lightgray;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+  display: flex;
+  flex-direction: column;
+  font-size:20px;
+}
+
+.authForm > * {
+  padding: 0.5rem;
+}
+
+.authForm > h1 {
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.authForm > input {
+  text-decoration: none;
+  border: none;
+  border-bottom: 1.5px solid lightgray;
+  outline: none;
+  margin: 1rem;
+  font-size: 15px;
+}
+
+/*button {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*}*/
+
+.button > button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: #008972;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  display:flex;
+  justify-content:space-between;
+
+}
+
+.authForm > input[type=text]:focus, input[type=password]:focus {
+    border-bottom: 1.5px solid #008972;
+}
+
+.popUpForm {
+  position:fixed;
+  z-index: 11;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popUpBackground {
+  padding:3.5em;
 }

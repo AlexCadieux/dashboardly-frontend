@@ -1,0 +1,13 @@
+.authForm > a {
+  padding: 0;
+}
+
+.authForm  p {
+  font-size: 10px;
+  margin: 0.5em 0;
+  padding: 0.5rem;
+}
+
+.authForm > a:hover {
+  background-color:#1A8571;
+}
