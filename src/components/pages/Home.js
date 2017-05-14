@@ -60,7 +60,6 @@ export default class Home extends Component {
     let { boards } = this.state;
     return (
       <div className="home">
-      test
         {this.state.addButtonClicked ?
           <div className="popUpForm">
             <CreateBoard whenSubmitted={this._handleCreateBoard}/>
